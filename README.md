@@ -14,7 +14,7 @@ Cheems Bot Multi Device is a automated whatsapp bot developed by <a href="https:
 </p>
 
 <p align="center">
-Big thanks❤️ to <a href="https://github.com/RaySenpai69" target="_blank">Ray Senpai</a> for huge contribution, Check out his bot <a href="https://github.com/RaySenpai69/Nezuko" target="_blank">Nezuko Bot</a>
+Big thanks❤️ to <a href="https://github.com/RaySenpai69" target="_blank">Ray Senpai</a> for huge contribution, Check out his bot <a href="https://github.com/RaySenpai69/Nezuko" target="_blank">Nezuko/a>
 </p>
 
 ------
