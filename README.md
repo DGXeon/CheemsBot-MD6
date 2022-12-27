@@ -46,7 +46,7 @@ Big thanks❤️ to <a href="https://github.com/RaySenpai69" target="_blank">Ray
 
 ## ```Donate Me```
 
-- [`FamPay`](https://telegra.ph/file/8737b098fd5702daeb7e0.jpg)
+- [`FamPay`](https://i.ibb.co/SKkw6Sy/IMG-20221223-WA0373.jpg)
 
 <p align="left">
 Scan qr code from the above button, u can pay through GooglePay, Paytm, PhonePe and FamPay.
