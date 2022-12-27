@@ -23,10 +23,8 @@ global.location = "India, Mizoram, Aizawl" //ur location
 
 //bot bomdy 
 global.ownernomer = "916909137213" //ur number
-global.ownertag = '916909137213' //ur tag number
 global.premium = ['916909137213'] //ur premium number
 global.botname = 'Cheems Bot MD V6' //ur bot name
-global.ownername = "🦄Dream Guy Xeon"
 global.linkz = "https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
 global.botscript = 'https://github.com/DGXeon/CheemsBot-MD6' //script link
