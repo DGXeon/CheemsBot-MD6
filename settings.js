@@ -4,7 +4,7 @@ const chalk = require('chalk')
 
 //aumto functioner
 global.autoTyping = false //auto tying in gc (true to on, false to off)
-global.autoRecord = true //auto recording (true to on, false to off)
+global.autoRecord = false //auto recording (true to on, false to off)
 
 //documents variants
 global.doc1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
@@ -29,7 +29,7 @@ global.botname = 'Cheems Bot MD V6' //ur bot name
 global.ownername = "🦄Dream Guy Xeon"
 global.linkz = "https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
-global.botscript = 'https://github.com/DGXeon/CheemsBot-MD4' //script link
+global.botscript = 'https://github.com/DGXeon/CheemsBot-MD6' //script link
 global.themeemoji = "🦄" //ur theme emoji
 global.packname = "Sticker By" //ur sticker watermark packname
 global.author = "Cheems Bot\n\n\nA whatsapp bot developed by\n🦄Dream Guy Xeon\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +916909137213" //ur sticker watermark author
