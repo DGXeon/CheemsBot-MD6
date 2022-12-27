@@ -16,7 +16,7 @@ Big thanks❤️ to <a href="https://github.com/RaySenpai69" target="_blank">Ray
 ---
 
 <p align="center">
-<a href="https://youtu.be/WiIqCdiDjFo"><img title="Size" src="https://img.shields.io/badge/Tutorial-Video-green"></a>
+<a href="https://youtu.be/57EKJWDgImE"><img title="Size" src="https://img.shields.io/badge/Tutorial-Video-green"></a>
 </p>
 
 ------
