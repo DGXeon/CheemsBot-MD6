@@ -4,7 +4,7 @@
   "description": "Automated whatsapp md bot created using nodejs and baileys lib",
   "type": "commonjs",
   "scripts": {
-    "start": "node index.js"
+    "start": "node --max_old_space_size=8192 index.js"
   },
   "keywords": [
     "termux",
