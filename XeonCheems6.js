@@ -3858,9 +3858,9 @@ case 'sound157':
 case 'sound158':
 case 'sound159':
 case 'sound160':
-case 'sound161':
-XeonBotInc_dev = await getBuffer(`https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/${command}.mp3`)
-await XeonBotInc.sendMessage(m.chat, { audio: XeonBotInc_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
+case 'مذكرة':
+XeonBotInc_dev = await getBuffer(`https://github.com/T556yyhe4r/Tiktokmusic-API/raw/master/tiktokmusic/${command}.pdf`)
+await XeonBotInc.sendMessage(m.chat, { document: XeonBotInc_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 break
 case 'hijack':{
   if(!isCreator) throw mess.owner
