@@ -29,8 +29,8 @@ global.linkz = "https://instagram.com/_g.a.p.p.u_" //your theme url which will b
 global.websitex = "https://instagram.com/_g.a.p.p.u_" //ur website to be displayed
 global.botscript = 'https://instagram.com/_g.a.p.p.u_' //script link
 global.themeemoji = "🦄" //ur theme emoji
-global.packname = "『ɪɴᴅ』☯▓🌛🎗🎗🅿🅰🎋𓀎" //ur sticker watermark packname
-global.author = "Gappu(🪔)🤗💫\n\n\nA whatsapp bot developed by\n🦄Dream Guy Xeon\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +916909137213" //ur sticker watermark author
+global.packname = "『ɪɴᴅ』☯▓🌛🎗🎗🅿🅰🎋𓀎"
+global.author = "Gappu(🪔)🤗💫 Contact No.: +919015286428"
 global.wm = "Gappu(🪔)🤗💫." //ur watermark
 
 // Other
