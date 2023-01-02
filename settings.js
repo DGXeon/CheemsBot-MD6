@@ -49,7 +49,7 @@ global.mess = {
     private: 'Features Used Only For Private Chat!',
     bot: 'This feature could be used by bot only',
     wait: 'Ruko jara...',
-    linkm: 'Where is the link?',
+    linkm: 'link kidhar he?',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
     nsfw: 'Bade harami ho beta, The nsfw feature has not been activated, please contact the admin to activate',
 }
@@ -69,7 +69,7 @@ global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutp
 //adventure1
     global.limitawal = {
     premium: "Infinity",
-    free: 12,
+    free: 20,
     monayawal: 1000
 }
    global.rpg = {
@@ -83,7 +83,7 @@ global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutp
 
 global.limitAwal = {
  prem: 'Unlimited',
- free: 70
+ free: 100
 }
 
 //adventure2
