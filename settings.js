@@ -30,7 +30,7 @@ global.websitex = "https://www.youtube.com/@storycityofficial" //ur website to b
 global.botscript = 'https://github.com/DGXeon/CheemsBot-MD6' //script link
 global.themeemoji = "⚡️" //ur theme emoji
 global.packname = "L U F F Y ⚡️" //ur sticker watermark packname
-global.author = "Cheems Bot\n\n\nA whatsapp bot developed by\n🦄Dream Guy Xeon\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +916909137213" //ur sticker watermark author
+global.author = "Luffy Bot\n\n\nA whatsapp bot developed by\n⚡️ Luffy\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +447558807292" //ur sticker watermark author
 global.wm = "Luffy Bot Inc." //ur watermark
 
 // Other
