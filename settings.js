@@ -15,23 +15,23 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['919015286428'] //ur owner number
-global.ownername = "🦄❥︎❀𝐃𝐄𝐄𝐏𝐀𝐊シ︎👻" //ur owner name
+global.owner = ['919540698964'] //ur owner number
+global.ownername = "🔥🅰️nkit_kumar__26🔥" //ur owner name
 global.ytname = "YT: Gappu" //ur yt chanel name
-global.socialm = "GitHub: Deepak" //ur github or insta name
+global.socialm = "GitHub: ankit2666" //ur github or insta name
 global.location = "India, Delhi, Bihar" //ur location
 
 //bot bomdy 
-global.ownernomer = "919015286428" //ur number
-global.premium = ['919015286428'] //ur premium number
-global.botname = '🦄❥︎❀𝐃𝐄𝐄𝐏𝐀𝐊シ︎👻' //ur bot name
-global.linkz = "https://instagram.com/_g.a.p.p.u_" //your theme url which will be displayed on whatsapp
-global.websitex = "https://instagram.com/_g.a.p.p.u_" //ur website to be displayed
-global.botscript = 'https://instagram.com/_g.a.p.p.u_' //script link
-global.themeemoji = "🦄" //ur theme emoji
-global.packname = "『ɪɴᴅ』☯▓🌛🎗🎗🅿🅰🎋𓀎"
-global.author = "Gappu(🪔)🤗💫 Contact No.: +919015286428"
-global.wm = "Gappu(🪔)🤗💫." //ur watermark
+global.ownernomer = "919540698964" //ur number
+global.premium = ['919355615854'] //ur premium number
+global.botname = '🔥🅰️nkit_kumar__26🔥' //ur bot name
+global.linkz = "https://instagram.com/ankit_kumar__26" //your theme url which will be displayed on whatsapp
+global.websitex = "https://instagram.com/ankit_kumar__26" //ur website to be displayed
+global.botscript = 'https://instagram.com/ankit_kumar__26' //script link
+global.themeemoji = "😍" //ur theme emoji
+global.packname = "⚡thunder⛈️ "
+global.author = "ankit❣️Contact No.: +919540698964"
+global.wm = "ankit❣️." //ur watermark
 
 // Other
 global.sessionName = 'session'
