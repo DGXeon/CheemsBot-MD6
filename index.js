@@ -161,7 +161,7 @@ let docs = pickRandom(documents)
 memb = metadata.participants.length
 XeonWlcm = await getBuffer(ppuser)
 XeonLft = await getBuffer(ppuser)
-                if (anu.action == 'add') {
+                if (anu.action == '') {
                 const xeonbuffer = await getBuffer(ppuser)
                 let xeonName = num
                 const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
@@ -202,7 +202,7 @@ mediaUrl: `${websitex}`
 }}
 }
 XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
-                } else if (anu.action == 'remove') {
+                } else if (anu.action == '') {
                 	const xeonbuffer = await getBuffer(ppuser)
                     const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
 	                const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
@@ -220,7 +220,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    │✑  ${xeontime} ${xeondate}
    └───────────────┈ ⳹`
 let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'Sayonara 🥀'}, type: 1}
+{buttonId: `wkwkwk`, buttonText: {displayText: 'Sayonara 🥀'}, type: 0}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
