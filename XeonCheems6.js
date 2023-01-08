@@ -1,6 +1,5 @@
 
 
-
 require('./settings')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, Mimetype, generateWAMessage, prepareWAMessageMedia, prepareMessageFromContent,  areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
@@ -4446,6 +4445,7 @@ case 'dare':
               const xeontruth = truth[Math.floor(Math.random() * truth.length)]
               buffertruth = await getBuffer(`https://telegra.ph/file/dc8e4edc7230cedbdec2c.jpg`)
               XeonBotInc.sendMessage(from, { image: buffertruth, caption: '_You choose TRUTH_\n'+ xeontruth }, {quoted:m})
+			  var but = [{buttonId: `truth`, buttonText: { displayText: "NEXT" }, type: 1 }]
               break  
 case 'fliptext': {
 if (args.length < 1) return m.reply(`Example:\n${prefix}fliptext ${ownername}`)
