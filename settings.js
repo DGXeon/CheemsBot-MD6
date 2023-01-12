@@ -1,4 +1,3 @@
-
 const fs = require('fs')
 const chalk = require('chalk')
 
@@ -35,7 +34,7 @@ global.wm = "Ayush Bot Inc." //ur watermark
 
 // Other
 global.sessionName = 'session'
-global.prefa = ['&''','!','.','🐦','🐤','🗿']
+global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = ''
 
 //messages
