@@ -26,7 +26,7 @@ global.premium = ['918602306506'] //ur premium number
 global.botname = 'Cheems Bot MD V6' //ur bot name
 global.linkz = "https://wa.me/message/PAL2CJSEUC4CE1" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtube.com/@ayushmuzik1037" //ur website to be displayed
-global.botscript = 'https://wa.me/message/PAL2CJSEUC4CE1' //script link
+global.botscript = 'https://github.com/Ayushdeveloper001' //script link
 global.themeemoji = "✨" //ur theme emoji
 global.packname = "Sticker By" //ur sticker watermark packname
 global.author = "Cheems Bot\n\n\nA whatsapp bot developed by\n Ayush \n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +918602306506" //ur sticker watermark author
@@ -34,7 +34,7 @@ global.wm = "Ayush Bot Inc." //ur watermark
 
 // Other
 global.sessionName = 'session'
-global.prefa = ['','!','.','🐦','🐤','🗿']
+global.prefa = ['.']
 global.sp = ''
 
 //messages
