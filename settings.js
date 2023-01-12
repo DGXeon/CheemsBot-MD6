@@ -35,7 +35,7 @@ global.wm = "Ayush Bot Inc." //ur watermark
 
 // Other
 global.sessionName = 'session'
-global.prefa = ['&']
+global.prefa = ['&''','!','.','🐦','🐤','🗿']
 global.sp = ''
 
 //messages
