@@ -72,7 +72,7 @@ async function startXeonBotInc() {
     const XeonBotInc = XeonBotIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Cheems Bot MD','Safari','1.0.0'],
+        browser: ['Cheat Activead','Safari','1.0.0'],
         auth: state
     })
 
@@ -112,7 +112,7 @@ async function startXeonBotInc() {
        try {
        ppgc = await XeonBotInc.profilePictureUrl(pea[0].id, 'image')
        } catch {
-       ppgc = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png'
+       ppgc = 'https://cdn.pixabay.com/photo/2015/11/05/08/21/geometry-1023846_960_720.jpg'
        }
        let lolXeon = { url : ppgc }
        if (pea[0].announce == true) {
@@ -153,7 +153,7 @@ let docs = pickRandom(documents)
                 try {
                     ppgroup = await zass.profilePictureUrl(anu.id, 'image')
                 } catch {
-                    ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png'
+                    ppgroup = 'https://cdn.pixabay.com/photo/2015/11/05/08/21/geometry-1023846_960_720.jpg'
                 }
                 
                 //welcome\\
@@ -168,8 +168,8 @@ XeonLft = await getBuffer(ppuser)
 	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6282142563862-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                xeonbody = `
-                            │「 𝗛𝗶 👋 」
+                xeonbody = `==========================
+                            │「 Hawoo 👋 」
                             └┬❖ 「 @${xeonName.split("@")[0]}  」
                                │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
                                │✑  ${metadata.subject}
