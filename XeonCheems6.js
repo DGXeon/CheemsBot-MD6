@@ -37,26 +37,26 @@ const ini_mark = `0@s.whatsapp.net`
 const ownernya = ownernomer + '@s.whatsapp.net'
 
 //TIME
-const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
+const xtime = moment.tz('Asia/Jakarta').format('HH:mm:ss')
+const xdate = moment.tz('Asia/Jakarta').format('DD/MM/YYYY')
+const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')  
  if(time2 < "23:59:00"){
-var ucapanWaktu = `Good Night 🌌`
+var ucapanWaktu = `Sweet dreams 🐧`
  }
  if(time2 < "19:00:00"){
-var ucapanWaktu = `Good Evening 🌃`
+var ucapanWaktu = `Selamat sore 🦟`
  }
  if(time2 < "18:00:00"){
-var ucapanWaktu = `Good Evening 🌃`
+var ucapanWaktu = `Selamat sore 🦟`
  }
  if(time2 < "15:00:00"){
-var ucapanWaktu = `Good Afternoon 🌅`
+var ucapanWaktu = `Siang pacarr.. 😈`
  }
  if(time2 < "11:00:00"){
-var ucapanWaktu = `Good Morning 🌄`
+var ucapanWaktu = `Mwoning sayang.. 😻`
  }
  if(time2 < "05:00:00"){
-var ucapanWaktu = `Good Morning 🌄`
+var ucapanWaktu = `Mwoning sayang.. 😻`
  } 
  
 // read database game
@@ -293,7 +293,7 @@ const hsjdh = randomNomor(5)
 if (isCmd) {
 data = await fetchJson('https://api.countapi.xyz/hit/XeonBotInc-md/visits')
 jumlahcmd = `${data.value}`
-dataa = await fetchJson(`https://api.countapi.xyz/hit/XeonBotInc-md${moment.tz('Asia/Kolkata').format('DDMMYYYY')}/visits`)
+dataa = await fetchJson(`https://api.countapi.xyz/hit/XeonBotInc-md${moment.tz('Asia/Jakarta').format('DDMMYYYY')}/visits`)
 jumlahharian = `${dataa.value}`
 }
 
@@ -1623,7 +1623,7 @@ await XeonBotInc.sendMessage(i, { video:media,  caption: txt, mentions:participa
                  let teks = `${themeemoji} *GROUP CHAT LIST*\n\nTotal Group : ${anulistg.length} Group\n\n`
                  for (let i of anulistg) {
                      let metadata = await XeonBotInc.groupMetadata(i)
-                     teks += `${themeemoji} *Name :* ${metadata.subject}\n${themeemoji} *Owner :* ${metadata.owner !== undefined ? '@' + metadata.owner.split`@`[0] : 'Unknown'}\n${themeemoji} *ID :* ${metadata.id}\n${themeemoji} *Made :* ${moment(metadata.creation * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss')}\n${themeemoji} *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
+                     teks += `${themeemoji} *Name :* ${metadata.subject}\n${themeemoji} *Owner :* ${metadata.owner !== undefined ? '@' + metadata.owner.split`@`[0] : 'Unknown'}\n${themeemoji} *ID :* ${metadata.id}\n${themeemoji} *Made :* ${moment(metadata.creation * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\n${themeemoji} *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
                  }
                  XeonBotInc.sendTextWithMentions(m.chat, teks, m)
              }
@@ -6468,7 +6468,7 @@ var inputnumber = text.split(" ")[0]
                 if (anu1 == '401' || anu1.status.length == 0) {
                     nobio += `wa.me/${anu[0].jid.split("@")[0]}\n`
                 } else {
-                    text66 += `🪀 *Number:* wa.me/${anu[0].jid.split("@")[0]}\n 🎗️*Bio :* ${anu1.status}\n🧐*Last update :* ${moment(anu1.setAt).tz('Asia/Kolkata').format('HH:mm:ss DD/MM/YYYY')}\n\n`
+                    text66 += `🪀 *Number:* wa.me/${anu[0].jid.split("@")[0]}\n 🎗️*Bio :* ${anu1.status}\n🧐*Last update :* ${moment(anu1.setAt).tz('Asia/Jakarta').format('HH:mm:ss DD/MM/YYYY')}\n\n`
                 }
             } catch {
                 nowhatsapp += `${number0}${i}${number1}\n`
