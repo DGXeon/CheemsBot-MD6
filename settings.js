@@ -27,10 +27,10 @@ global.premium = ['6282142563862'] //ur premium number
 global.botname = 'Confession Xerf ~' //ur bot name
 global.linkz = "https://chat.whatsapp.com/IBDg0D43jaXDhwSpPe4HUN" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
-global.botscript = 'https://github.com/DGXeon/CheemsBot-MD6' //script link
+global.botscript = 'https://instagram.com/' //script link
 global.themeemoji = "🧜🏻‍♂️" //ur theme emoji
-global.packname = "Sticker By Xerf ~ Confession Edgard" //ur sticker watermark packname
-global.author = "Xerf Bot\n\n\nA whatsapp bot developed by\nXerf ~\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +6282142563862" //ur sticker watermark author
+global.packname = "Sticker By Xerf ~ Confession Edgard 😈" //ur sticker watermark packname
+global.author = "XConfess-bot\n\n\nA whatsapp bot developed by\nXerf ~\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +6282142563862" //ur sticker watermark author
 global.wm = "Xerf ~" //ur watermark
 
 // Other
