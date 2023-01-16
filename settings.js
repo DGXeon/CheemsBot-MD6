@@ -15,23 +15,23 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['916909137213'] //ur owner number
-global.ownername = "🦄Dream Guy Xeon" //ur owner name
-global.ytname = "YT: Xeon" //ur yt chanel name
-global.socialm = "GitHub: DGXeon" //ur github or insta name
-global.location = "India, Mizoram, Aizawl" //ur location
+global.owner = ['6282142563862'] //ur owner number
+global.ownername = "Xerf ~" //ur owner name
+global.ytname = "My Youtube -> " //ur yt chanel name
+global.socialm = "Instagram: " //ur github or insta name
+global.location = "Indonesia, in your heart ♥" //ur location
 
 //bot bomdy 
-global.ownernomer = "916909137213" //ur number
-global.premium = ['916909137213'] //ur premium number
-global.botname = 'Cheems Bot MD V6' //ur bot name
-global.linkz = "https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS" //your theme url which will be displayed on whatsapp
+global.ownernomer = "6282142563862" //ur number
+global.premium = ['6282142563862'] //ur premium number
+global.botname = 'Confession Xerf ~' //ur bot name
+global.linkz = "https://chat.whatsapp.com/IBDg0D43jaXDhwSpPe4HUN" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
 global.botscript = 'https://github.com/DGXeon/CheemsBot-MD6' //script link
-global.themeemoji = "🦄" //ur theme emoji
-global.packname = "Sticker By" //ur sticker watermark packname
-global.author = "Cheems Bot\n\n\nA whatsapp bot developed by\n🦄Dream Guy Xeon\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +916909137213" //ur sticker watermark author
-global.wm = "Xeon Bot Inc." //ur watermark
+global.themeemoji = "🧜🏻‍♂️" //ur theme emoji
+global.packname = "Sticker By Xerf ~ Confession Edgard" //ur sticker watermark packname
+global.author = "Xerf Bot\n\n\nA whatsapp bot developed by\nXerf ~\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +6282142563862" //ur sticker watermark author
+global.wm = "Xerf ~" //ur watermark
 
 // Other
 global.sessionName = 'session'
@@ -69,8 +69,8 @@ global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutp
 //adventure1
     global.limitawal = {
     premium: "Infinity",
-    free: 12,
-    monayawal: 1000
+    free: 7,
+    monayawal: 10
 }
    global.rpg = {
    darahawal: 100,
@@ -83,7 +83,7 @@ global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutp
 
 global.limitAwal = {
  prem: 'Unlimited',
- free: 70
+ free: 7
 }
 
 //adventure2
