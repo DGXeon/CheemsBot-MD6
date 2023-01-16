@@ -1,5 +1,5 @@
 {
-  "name": "CheemsBot-MD",
+  "name": "Xerf-botz",
   "version": "6.0.0",
   "description": "Automated whatsapp md bot created using nodejs and baileys lib",
   "type": "commonjs",
@@ -15,9 +15,10 @@
     "bot",
     "bot-md",
     "multi-device",
-    "xeon-bot-inc"
+    "xeon-bot-inc",
+    "xerf-dev"
   ],
-  "author": "DGXeon",
+  "author": "Xerf",
   "license": "AGPL-3",
   "dependencies": {
     "@adiwajshing/baileys": "^4.4.0",
