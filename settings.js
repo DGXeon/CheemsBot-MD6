@@ -30,7 +30,7 @@ global.websitex = "https://fastboosthub.com" //ur website to be displayed
 global.botscript = 'https://github.com/Teestar001/CheemsBot-MD6' //script link
 global.themeemoji = "🦄" //ur theme emoji
 global.packname = "Fastboosthub" //ur sticker watermark packname
-global.author = "Teefundz Bot\n\n\nA whatsapp bot developed by\n🦄Fast Boost Hub\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +916909137213" //ur sticker watermark author
+global.author = "Teefundz Bot\n\n\nA whatsapp bot developed by\n🦄Fast Boost Hub\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +2347043031692" //ur sticker watermark author
 global.wm = "Fastboosthub Bot Inc." //ur watermark
 
 // Other
