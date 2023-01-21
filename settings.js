@@ -3,7 +3,7 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 //aumto functioner
-global.autoTyping = false //auto tying in gc (true to on, false to off)
+global.autoTyping = true //auto tying in gc (true to on, false to off)
 global.autoRecord = false //auto recording (true to on, false to off)
 
 //documents variants
@@ -15,23 +15,23 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['201554496598'] //ur owner number
-global.ownername = "🦄Dream Guy Xeon" //ur owner name
-global.ytname = "YT: Xeon" //ur yt chanel name
-global.socialm = "GitHub: DGXeon" //ur github or insta name
-global.location = "India, Mizoram, Aizawl" //ur location
+global.owner = ['201554496598','201028453763'] //ur owner number
+global.ownername = "DEV-Lido ☠️" //ur owner name
+global.igname = "dsds" //ur yt chanel name
+global.socialm = "https://t.me/Lido7x" //ur github or insta name
+global.location = "مصر - سوهاج - مركز سوهاج" //ur location
 
 //bot bomdy 
 global.ownernomer = "201554496598" //ur number
-global.premium = ['201554496598'] //ur premium number
-global.botname = 'Cheems Bot MD V6' //ur bot name
+global.premium = ['201554496598','201028453763'] //ur premium number
+global.botname = 'BAKAR Bot ~ DEV: Lido 🧑🏻‍💻' //ur bot name
 global.linkz = "https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS" //your theme url which will be displayed on whatsapp
-global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
+global.websitex = "https://t.me/Lido7x" //ur website to be displayed
 global.botscript = 'https://github.com/DGXeon/CheemsBot-MD6' //script link
 global.themeemoji = "🦄" //ur theme emoji
 global.packname = "Sticker By" //ur sticker watermark packname
-global.author = "Cheems Bot\n\n\nA whatsapp bot developed by\n🦄Dream Guy Xeon\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +916909137213" //ur sticker watermark author
-global.wm = "Xeon Bot Inc." //ur watermark
+global.author = "BAKAR Bot\n\n\nA whatsapp bot developed by\n🦄Dream Guy Xeon\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +916909137213" //ur sticker watermark author
+global.wm = "DEV: Lido 🧑🏻‍💻" //ur watermark
 
 // Other
 global.sessionName = 'session'

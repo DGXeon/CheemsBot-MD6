@@ -19,6 +19,51 @@
       "afkTime": -1,
       "afkReason": "",
       "limit": 12
+    },
+    "201101389228@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 12
+    },
+    "201554496598@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 12
+    },
+    "201028453763@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 11
+    },
+    "201557235488@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 12
+    },
+    "201551781115@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 12
+    },
+    "201221309637@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 12
+    },
+    "201272186301@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 12
+    },
+    "201507719674@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 12
+    },
+    "201010997220@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 12
     }
   },
   "chats": {
@@ -39,6 +84,38 @@
       "antilink": false
     },
     "919402104403@s.whatsapp.net": {
+      "mute": false,
+      "antilink": false
+    },
+    "201101389228@s.whatsapp.net": {
+      "mute": false,
+      "antilink": false
+    },
+    "120363047632765953@g.us": {
+      "mute": false,
+      "antilink": false
+    },
+    "120363027258707354@g.us": {
+      "mute": false,
+      "antilink": false
+    },
+    "201557235488@s.whatsapp.net": {
+      "mute": false,
+      "antilink": false
+    },
+    "120363029259624086@g.us": {
+      "mute": false,
+      "antilink": false
+    },
+    "201272186301@s.whatsapp.net": {
+      "mute": false,
+      "antilink": false
+    },
+    "201028453763@s.whatsapp.net": {
+      "mute": false,
+      "antilink": false
+    },
+    "201507719674@s.whatsapp.net": {
       "mute": false,
       "antilink": false
     }
@@ -66,6 +143,14 @@
       "templateMsg": false
     },
     "46731298303@s.whatsapp.net": {
+      "status": 0,
+      "autobio": false,
+      "templateImage": true,
+      "templateVideo": false,
+      "templateGif": false,
+      "templateMsg": false
+    },
+    "201101389228@s.whatsapp.net": {
       "status": 0,
       "autobio": false,
       "templateImage": true,
