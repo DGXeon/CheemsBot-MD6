@@ -164,8 +164,8 @@ XeonLft = await getBuffer(ppuser)
                 if (anu.action == 'add') {
                 const xeonbuffer = await getBuffer(ppuser)
                 let xeonName = num
-                const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                const xtime = moment.tz('Africa/Cairo').format('HH:mm:ss')
+	            const xdate = moment.tz('Africa/Cairo').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 xeonbody = `┌─❖
@@ -179,33 +179,23 @@ XeonLft = await getBuffer(ppuser)
    │✑ ${xtime} ${xdate}
    └───────────────┈ ⳹`
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
+    {buttonId: `owner`, buttonText: {displayText: '🐼 BYE 🐼'}, type: 1},
+    {buttonId: `menu`, buttonText: {displayText: '♞ MENU ♞'}, type: 1},
+    {buttonId: `owner`, buttonText: {displayText: '🐼 BYE 🐼'}, type: 2},
+    {buttonId: `menu`, buttonText: {displayText: '♞ MENU ♞'}, type: 2}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
-mimetype: docs,
-jpegThumbnail:XeonWlcm,
-mentions: [num],
-fileName: `${metadata.subject}`,
-fileLength: 99999999999999,
-caption: xeonbody,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title: `${ownername}`,
-body: `Don't forget to read group description`,
-mediaType:2,
-thumbnail: XeonWlcm,
-sourceUrl: `${websitex}`,
-mediaUrl: `${websitex}`
-}}
+    image: { url: 'https://i.ibb.co/hXtGkzj/welcome-poster-spectrum-brush-strokes-white-background-colorful-gradient-brush-design-vector-paper-i.jpg'},
+    caption: xeonbody,
+    footer: `${botname}`,
+    buttons: buttons,
+    headerType: 4
 }
-XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+XeonBotInc.sendMessage(anu.id, buttonMessage)
                 } else if (anu.action == 'remove') {
                 	const xeonbuffer = await getBuffer(ppuser)
-                    const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	                const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                    const xeontime = moment.tz('Africa/Cairo').format('HH:mm:ss')
+	                const xeondate = moment.tz('Africa/Cairo').format('DD/MM/YYYY')
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
@@ -223,26 +213,13 @@ let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: 'Sayonara 🥀'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
-mimetype: docs,
-jpegThumbnail:XeonLft,
-mentions: [num],
-fileName: `${metadata.subject}`,
-fileLength: 99999999999999,
-caption: xeonbody,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title: `${ownername}`,
-body: `Bye! my friend, take care.`,
-mediaType:2,
-thumbnail: XeonLft,
-sourceUrl: `${websitex}`,
-mediaUrl: `${websitex}`
-}}
+    image: { url: 'https://i.ibb.co/gytytkM/images.jpg'},
+    caption: xeonbody,
+    footer: `📶 𝘽𝙡𝙪𝙚 𝙇𝙞𝙤𝙣𝙚 📶`,
+    buttons,
+    headerType: 4
 }
-XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+XeonBotInc.sendMessage(anu.id, buttonMessage)
                              
                 }
             }
@@ -289,7 +266,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await XeonBotInc.getName(i),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await XeonBotInc.getName(i)}\nFN:${await XeonBotInc.getName(i)}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${ytname}\nitem2.X-ABLabel:YouTube\nitem3.URL:${socialm}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await XeonBotInc.getName(i)}\nFN:${await XeonBotInc.getName(i)}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:اضغط هنا للدردشة المطور ليدو\nitem2.EMAIL;type=INTERNET:${igname}\nitem2.X-ABLabel:انستا ليدو\nitem3.URL:${socialm}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${location};;;;\nitem4.X-ABLabel:مكان المطور ليدو\nEND:VCARD`
 	    })
 	}
 	XeonBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })
