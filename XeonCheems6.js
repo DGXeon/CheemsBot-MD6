@@ -7485,7 +7485,7 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let xeonezy = `┌─❖
 │ Hi 👋 
 └┬❖  ${pushname} 
-┌┤✑  ${ucapanWaktu} 😄
+┌┤✑  ${ucapanWaktu} ☠️
 │└────────────┈ ⳹
 │
 └─ 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊        
@@ -7516,7 +7516,7 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
    │✑  The Button Below
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
+            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu☠️' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu☠️' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script☠️' }, type: 1 }]
             let buttonMessage = {
   document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
   fileName : `${wm}`,
@@ -7557,107 +7557,107 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 								"title": "Bot Features ❤️",
 								"rows": [
 									{
-										"title": "All Menu 🥀",
+										"title": "All Menu ☠️",
 										"description": "Displays The List Of All The Features!",
 										"rowId": `${prefix}allmenu`
 									},
 									{
-										"title": "Owner Menu 💠",
+										"title": "Owner Menu ☠️",
 										"description": "Displays The List Of Owner Features",
 										"rowId": `${prefix}ownermenu`
 										},
 									{
-										"title": "Group Menu ✨",
+										"title": "Group Menu ☠️",
 										"description": "Displays The List Of Main Features",
 										"rowId": `${prefix}groupmenu`
 										},
 										{
-										"title": "Maker Menu 🌈",
+										"title": "Maker Menu ☠️",
 										"description": "Displays The List Of Logo Making Features",
 										"rowId": `${prefix}makermenu`
 									},
 									{
-										"title": "Sound Menu 🎵",
+										"title": "Sound Menu ☠️",
 										"description": "Displays The List Of Sound Features",
 										"rowId": `${prefix}soundmenu`
 									},
 									{
-										"title": "Download Menu ↘️",
+										"title": "Download Menu ☠️",
 										"description": "Displays The List Of Download Features",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
-										"title": "Sticker Menu 🃏",
+										"title": "Sticker Menu ☠️",
 										"description": "Displays The List Of Sticker Features",
 										"rowId": `${prefix}stickermenu`
 									},
 									{
-										"title": "Search Menu 🔎",
+										"title": "Search Menu ☠️",
 										"description": "Displays The List Of Searching Features",
 										"rowId": `${prefix}searchmenu`
 									},
 									{
-										"title": "Random Image Menu 🌆",
+										"title": "Random Image Menu ☠️",
 										"description": "Displays The List Of Random Image Features",
 										"rowId": `${prefix}randomimagemenu`
 									},
 									{
-										"title": "Random Video Menu 🌆",
+										"title": "Random Video Menu ☠️",
 										"description": "Displays The List Of Random Video Features",
 										"rowId": `${prefix}randomvideomenu`
 									},
 									{
-										"title": "Image Effect Menu 🖼️",
+										"title": "Image Effect Menu ☠️",
 										"description": "Displays The List Of Image Effect Features",
 										"rowId": `${prefix}imageeffectmenu`
 									},
 										{
-											"title": "Anime Menu 😘",
+											"title": "Anime Menu ☠️",
 										"description": "Displays The List Of Random Anime Features",
 										"rowId": `${prefix}animemenu`
 										},
 										{
-											"title": "Emote Menu 😀",
+											"title": "Emote Menu ☠️",
 										"description": "Displays The List Of Emote Features",
 										"rowId": `${prefix}emotemenu`
 										},
 										{
-										"title": "Anime Sticker Menu ☺️",
+										"title": "Anime Sticker Menu ☠️",
 										"description": "Displays The List Of Anime Sticker Features",
 										"rowId": `${prefix}animestickermenu`
 									     },
 									{
-										"title": "Nsfw Menu 🤓",
+										"title": "Nsfw Menu ☠️",
 										"description": "Displays The List Of Nsfe Features",
 										"rowId": `${prefix}nsfwmenu`
 									     },
 										{
-											"title": "Fun Menu 🕺",
+											"title": "Fun Menu ☠️",
 										"description": "Displays The List Of Fun Features",
 										"rowId": `${prefix}funmenu`
 										},
 										{
-										"title": "Game Menu 🎮",
+										"title": "Game Menu ☠️",
 										"description": "Displays The List Of Game Features",
 										"rowId": `${prefix}gamemenu`
 									},
 										{
-											"title": "Convert Menu ⚒️",
+											"title": "Convert Menu ☠️",
 										"description": "Displays The List Of Convert Features",
 										"rowId": `${prefix}convertmenu`
 										},
 										{
-											"title": "Database Menu ♻️",
+											"title": "Database Menu ☠️",
 										"description": "Displays The List Of Database Features",
 										"rowId": `${prefix}databasemenu`
 										},
 										{
-										"title": "Other Menu 🐸",
+										"title": "Other Menu ☠️",
 										"description": "Displays The List Miscellaneous Features",
 										"rowId": `${prefix}othermenu`
 									     },
 										{
-										"title": "War Menu☣️",
+										"title": "War Menu☠️",
 										"description": "Displays The List Of War Features",
 										"rowId": `${prefix}warmenu`
 									}
@@ -7698,9 +7698,9 @@ break
 var unicorn = await getBuffer(picak+'All Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'Script 🔖'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: 'Donate 🍵'}, type: 1},
-  {buttonId: 'owner', buttonText: {displayText: 'Owner 🤣'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Script ☠️'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: 'Donate ☠️'}, type: 1},
+  {buttonId: 'owner', buttonText: {displayText: 'Owner ☠️'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
