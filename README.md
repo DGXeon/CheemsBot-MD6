@@ -1,12 +1,12 @@
 
 
-<h1 align="center">ꪶ𝗖𝗵𝗲𝗲𝗺𝘀 𝗕𝗼𝘁-𝗠𝗗 𝗩6ꫂ<br></h1>
+<h1 align="center">ꪶDumidu 𝗕𝗼𝘁-𝗠𝗗 𝗩6ꫂ<br></h1>
 <p align="center">
 <img src="https://media.tenor.com/sCkOgr0s6GsAAAAC/cheems-nerd.gif" alt="animated" width="540" height="280" />
 </p>
 
 <p align="center">
-Cheems Bot Multi Device is a automated whatsapp bot developed by <a href="https://github.com/DGXeon" target="_blank">Xeon</a> using <a href="https://github.com/adiwajshing/Baileys" target="_blank">Baileys</a> and <a href="https://github.com/nodejs" target="_blank">Nodejs</a>. Dont forget to give a star bro.
+Dumidu Bot Multi Device is a automated whatsapp bot developed by <a href="https://github.com/DGXeon" target="_blank">Xeon</a> using <a href="https://github.com/adiwajshing/Baileys" target="_blank">Baileys</a> and <a href="https://github.com/nodejs" target="_blank">Nodejs</a>. Dont forget to give a star bro.
 </p>
 
 <p align="center">
@@ -86,7 +86,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ## `Clone Repo & Installation dependencies`
 ```bash
 git clone https://github.com/DGXeon/CheemsBot-MD6.git
-cd CheemsBot-MD6
+cd DumiduBot-MD6 
 
 npm start
 ```
