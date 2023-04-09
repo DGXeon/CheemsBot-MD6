@@ -7472,8 +7472,8 @@ case 'textshot': {
 
 case 'tqtt': 
 throw `Thanks to
-LORD BUDDHA
-Xeon (Me)
+LORD KRISHNA
+Ayush (Me)
 My family
 And all friends who helped assemble this sexy script !!!`
 break
