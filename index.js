@@ -1,7 +1,16 @@
 
 require('./settings')
-const { default: XeonBotIncConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
-const { state, saveState } = useSingleFileAuthState(`${sessionName}.json`)
+const { default: XeonBotIncConnect, useSingleFileAuthState, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, jidDecode, proto } = require("@adiwajshing/baileys")
+const {
+	default: makeWASocket,
+	BufferJSON,
+	initInMemoryKeyStore,
+	DisconnectReason,
+	AnyMessageContent,
+        makeInMemoryStore,
+	useMultiFileAuthState,
+	delay
+} = require("@adiwajshing/baileys")
 const pino = require('pino')
 const { Boom } = require('@hapi/boom')
 const fs = require('fs')
@@ -11,6 +20,9 @@ const FileType = require('file-type')
 const path = require('path')
 const _ = require('lodash')
 const axios = require('axios')
+const clui = require('clui')
+const { Spinner } = clui
+const { color, mylog, infolog } = require("./lib/color")
 const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/myfunc')
@@ -30,8 +42,6 @@ const { Low, JSONFile } = low
 const mongoDB = require('./lib/mongoDB')
 
 global.api = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({ ...query, ...(apikeyqueryname ? { [apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name] } : {}) })) : '')
-
-const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
 global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
 global.db = new Low(
@@ -67,16 +77,78 @@ process.on('uncaughtException', console.error)
 if (global.db) setInterval(async () => {
     if (global.db.data) await global.db.write()
   }, 30 * 1000)
+  
+  
+  function title() {
+      console.clear()
+      console.log(chalk.yellow(`\n\n               ${chalk.bold.yellow(`[ ${botname} ]`)}\n\n`))
+      console.log(color(`< ================================================== >`, 'cyan'))
+	console.log(color(`\n${themeemoji} YT CHANNEL: Xeon`,'magenta'))
+console.log(color(`${themeemoji} GITHUB: DGXeon `,'magenta'))
+console.log(color(`${themeemoji} WA NUMBER: ${owner}`,'magenta'))
+console.log(color(`${themeemoji} CREDIT: ${wm}\n`,'magenta'))
+}
+
+/**
+* Uncache if there is file change;
+* @param {string} module Module name or path;
+* @param {function} cb <optional> ;
+*/
+function nocache(module, cb = () => { }) {
+	console.log(`${module} is up to date!`) 
+	fs.watchFile(require.resolve(module), async () => {
+		await uncache(require.resolve(module))
+		cb(module)
+	})
+}
+/**
+* Uncache a module
+* @param {string} module Module name or path;
+*/
+function uncache(module = '.') {
+	return new Promise((resolve, reject) => {
+		try {
+			delete require.cache[require.resolve(module)]
+			resolve()
+		} catch (e) {
+			reject(e)
+		}
+	})
+}
+
+const status = new Spinner(chalk.cyan(` Booting ${botname}`))
+const starting = new Spinner(chalk.cyan(` Preparing After Connect`))
+const reconnect = new Spinner(chalk.redBright(` Reconnecting ${botname}`))
+
+const store = makeInMemoryStore({ logger: pino().child({ level: 'fatal', stream: 'store' }) })
 
 async function startXeonBotInc() {
-    const XeonBotInc = XeonBotIncConnect({
-        logger: pino({ level: 'silent' }),
-        printQRInTerminal: true,
-        browser: ['Cheems Bot MD','Safari','1.0.0'],
-        auth: state
-    })
-
-    store.bind(XeonBotInc.ev)
+    const connectToWhatsApp = async () => {
+    	const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys')
+        const XeonBotInc = makeWASocket({
+            printQRInTerminal: true,
+            logger: pino({ level: 'fatal' }),
+            auth: state,
+            browser: [`${botname}`, "Safari", "3.0"],
+	    getMessage: async key => {
+              return {
+                
+              }
+          }
+        })
+	title()
+        store.bind(XeonBotInc.ev)
+	
+	XeonBotInc.ev.on('connection.update', (update) => {
+          if (global.qr !== update.qr) {
+           global.qr = update.qr
+          }
+          const { connection, lastDisconnect } = update
+            if (connection === 'close') {
+                lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut ? connectToWhatsApp() : console.log('Connection logged out...')
+            }
+        })
+	XeonBotInc.ev.on('creds.update', await saveCreds)
     
     // anticall auto block
     XeonBotInc.ws.on('CB:call', async (json) => {
@@ -316,23 +388,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
 
     XeonBotInc.serializeM = (m) => smsg(XeonBotInc, m, store)
 
-    XeonBotInc.ev.on('connection.update', async (update) => {
-        const { connection, lastDisconnect } = update	    
-        if (connection === 'close') {
-        let reason = new Boom(lastDisconnect?.error)?.output.statusCode
-            if (reason === DisconnectReason.badSession) { console.log(`Bad Session File, Please Delete Session and Scan Again`); XeonBotInc.logout(); }
-            else if (reason === DisconnectReason.connectionClosed) { console.log("Connection closed, reconnecting...."); startXeonBotInc(); }
-            else if (reason === DisconnectReason.connectionLost) { console.log("Connection Lost from Server, reconnecting..."); startXeonBotInc(); }
-            else if (reason === DisconnectReason.connectionReplaced) { console.log("Connection Replaced, Another New Session Opened, Please Close Current Session First"); XeonBotInc.logout(); }
-            else if (reason === DisconnectReason.loggedOut) { console.log(`Device Logged Out, Please Scan Again And Run.`); XeonBotInc.logout(); }
-            else if (reason === DisconnectReason.restartRequired) { console.log("Restart Required, Restarting..."); startXeonBotInc(); }
-            else if (reason === DisconnectReason.timedOut) { console.log("Connection TimedOut, Reconnecting..."); startXeonBotInc(); }
-            else XeonBotInc.end(`Unknown DisconnectReason: ${reason}|${connection}`)
-        }
-        console.log('Connected...', update)
-    })
-
-    XeonBotInc.ev.on('creds.update', saveState)
+    
 
     // Add Other
 
@@ -773,13 +829,17 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
     return XeonBotInc
 }
 
+connectToWhatsApp()
+.catch(err => console.log(err))
+}
+
 startXeonBotInc()
 
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
 	fs.unwatchFile(file)
-	console.log(chalk.redBright(`Update ${__filename}`))
+	console.log(chalk.redBright(`< ================================================== >\n${__filename} Updated`))
 	delete require.cache[file]
 	require(file)
 })
